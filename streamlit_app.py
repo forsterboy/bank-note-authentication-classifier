@@ -13,10 +13,10 @@ def predict_banknote(variance, skewness, curtosis, entropy):
 
 def main():
     st.title("Banknote Authentication Classifier")
-    variance = st.text_input("variance","Type Here")
-    skewness = st.text_input("skewness","Type Here")
-    curtosis = st.text_input("curtosis","Type Here")
-    entropy = st.text_input("entropy","Type Here")
+    variance = st.text_input("variance", placeholder="Type Here")
+    skewness = st.text_input("skewness", placeholder="Type Here")
+    curtosis = st.text_input("curtosis", placeholder="Type Here")
+    entropy = st.text_input("entropy", placeholder="Type Here")
 
     if st.button("Get Prediction"):
         output = predict_banknote(variance, skewness, curtosis, entropy)
